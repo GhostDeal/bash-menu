@@ -8,10 +8,10 @@ MenuBox is a Bash script to easily allow you to add a menu to your own scripts.
 How to incorporate MenuBox in your own scripts ?
 
 1. Create list :
-selection=("A" "B" "C")
+`selection=("A" "B" "C")`
 
 2. Display the Menu :
-MenuDisplay "YOUR SUB MENU NAME" "${selection[@]}"
+`MenuDisplay "YOUR SUB MENU NAME" "${selection[@]}"`
 
 3. Create case statement :
 
