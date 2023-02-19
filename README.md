@@ -14,18 +14,21 @@ selection=("A" "B" "C")
 MenuDisplay "YOUR SUB MENU NAME" "${selection[@]}"
 
 3. Create case statement :
-   case $Cursor in
-        0) ... ;;
-        1) ... ;;
-        2) ... ;;
-        *) exit 0 ;;
-    esac
-    
+
+	   case $Cursor in
+			0) ... ;;
+			1) ... ;;
+			2) ... ;;
+			*) exit 0 ;;
+		esac
+
 OR
 
-   case $Selection in
-        "A") ... ;;
-        "B") ... ;;
-        "C") ... ;;
-        *) exit 0 ;;
-    esac
+	case $Selection in
+		"A") ... ;;
+		"B") ... ;;
+		"C") ... ;;
+		*) exit 0 ;;
+	esac
+		
+
