@@ -66,10 +66,9 @@ function MenuDisplay {
         # read delimiter - ENTER
         if [[ $key == "" ]] 
         then
-		    # export the user selection (without color)
-		    Selection="$(sed -r "s/\x1B(\[[0-9;]*[JKmsu]|\(B)//g" <<< "${options[$cur]}")"
-		    Cursor=$cur
-		    return 0
+		Selection="$(sed -r "s/\x1B(\[[0-9;]*[JKmsu]|\(B)//g" <<< "${options[$cur]}")"
+		Cursor=$cur
+		return 0
         fi
     done
 }
