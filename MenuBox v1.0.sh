@@ -77,7 +77,7 @@ function MenuDisplay {
 function Menu() {
     selection=(
 		"Choice 01"
-    	"Choice 02"
+    		"Choice 02"
 		"Choice 03"
 		"Second Menu"
 		"Exit"
@@ -95,11 +95,11 @@ function Menu() {
 
 function Second_Menu() {
     selection=(
-		"Choice A"
+	"Choice A"
     	"Choice B"
-		"Choice C"
-		"<= Previous"
-		"Exit"
+	"Choice C"
+	"<= Previous"
+	"Exit"
     )
     MenuDisplay "Second Menu" "${selection[@]}"
     
@@ -107,13 +107,12 @@ function Second_Menu() {
         "Choice A") echo "You chosen => " $Selection ; sleep 2 ;;
         "Choice B") echo "You chosen => " $Selection ; sleep 2 ;;
         "Choice C") echo "You chosen => " $Selection ; sleep 2 ;;
-		"<= Previous") Menu ;;
+	"<= Previous") Menu ;;
         *) exit 0 ;;
     esac
 }
 
 while true
 do
-	ResizeWindow 120 50
 	Menu
 done
