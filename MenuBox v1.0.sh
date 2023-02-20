@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#######################
-# SIAEF MenuBox v1.0  #
-#######################
+#################
+# MenuBox v1.0  #
+#################
 
 function MenuDisplay {
     local Formatting_Set_Reverse="\e[7m"
