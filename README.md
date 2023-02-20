@@ -9,11 +9,11 @@ How to incorporate MenuBox in your own scripts ?
 
 1. Create list :
 
-``selection=("A" "B" "C")``
+``selections=("A" "B" "C")``
 
 2. Display the Menu :
 
-``MenuDisplay "YOUR SUB MENU NAME" "${selection[@]}"``
+``MenuDisplay "YOUR SUB MENU NAME" "${selections[@]}"``
 
 3. Create case statement :
 
