@@ -76,11 +76,11 @@ function MenuDisplay {
 
 function Menu() {
     selection=(
-		"Choice 01"
-    		"Choice 02"
-		"Choice 03"
-		"Second Menu"
-		"Exit"
+	"Choice 01"
+    	"Choice 02"
+	"Choice 03"
+	"Second Menu"
+	"Exit"
     )
     MenuDisplay "Main Menu" "${selection[@]}"
     
