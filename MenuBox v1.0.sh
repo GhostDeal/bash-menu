@@ -74,14 +74,14 @@ function MenuDisplay {
 }
 
 function Menu() {
-    selection=(
+    selections=(
 	"Choice 01"
     	"Choice 02"
 	"Choice 03"
 	"Second Menu"
 	"Exit"
     )
-    MenuDisplay "Main Menu" "${selection[@]}"
+    MenuDisplay "Main Menu" "${selections[@]}"
     
     case $Cursor in
         0) echo "You chosen => " $Selection ; sleep 2 ;;
@@ -93,14 +93,14 @@ function Menu() {
 }
 
 function Second_Menu() {
-    selection=(
+    selections=(
 	"Choice A"
     	"Choice B"
 	"Choice C"
 	"<= Previous"
 	"Exit"
     )
-    MenuDisplay "Second Menu" "${selection[@]}"
+    MenuDisplay "Second Menu" "${selections[@]}"
     
     case $Selection in
         "Choice A") echo "You chosen => " $Selection ; sleep 2 ;;
